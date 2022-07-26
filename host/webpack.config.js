@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:8080/",
+    publicPath: "https://paritosh149-jherr-micro-fes-in-10-minutes-7v69q6wxhrw6j-8080.githubpreview.dev/",
   },
 
   resolve: {
@@ -43,7 +43,7 @@ module.exports = {
       name: "host",
       filename: "remoteEntry.js",
       remotes: {
-        remote: "remote@http://localhost:3000/remoteEntry.js",
+        remote: "remote@https://paritosh149-jherr-micro-fes-in-10-minutes-7v69q6wxhrw6j-3000.githubpreview.dev/remoteEntry.js",
       },
       exposes: {},
       shared: {
